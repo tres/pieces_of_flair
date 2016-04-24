@@ -1,9 +1,5 @@
 # PiecesOfFlair
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pieces_of_flair`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'pieces_of_flair'
+
+array_of_pieces = PiecesOfFlair::Flair.get_pieces
+
+array_of_peices.each do |flair|
+  puts flair.name
+  puts flair.art
+end
+
+```
+
 
 ## Development
 
@@ -32,5 +39,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pieces_of_flair.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tres/pieces_of_flair.
 
+=======
+# pieces_of_flair
+ASCII Art On Demand
